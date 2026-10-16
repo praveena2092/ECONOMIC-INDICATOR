@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name: projects, contributions and background." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!--
+    HOW TO EDIT:
+    Search this file for [ ... ] and replace each placeholder with your own text/links.
+    Duplicate or delete any <article class="project"> block to add or remove projects.
+  -->
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --text: #1c1c1a;
+      --muted: #6b6a65;
+      --line: #e6e3dc;
+      --card: #ffffff;
+      --accent: #2f5d50;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121211;
+        --text: #efede8;
+        --muted: #9b9a94;
+        --line: #2a2a27;
+        --card: #1a1a18;
+        --accent: #8fc4b2;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 28px 0; font-size: 14px;
+    }
+    nav .logo { font-family: "Fraunces", serif; font-weight: 600; font-size: 18px; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 20px; transition: color .2s; }
+    nav a:hover { color: var(--text); }
+
+    header.hero { padding: 72px 0 56px; }
+    .eyebrow { color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+    h1 {
+      font-family: "Fraunces", serif; font-weight: 600;
+      font-size: clamp(36px, 7vw, 56px); line-height: 1.1;
+      margin: 14px 0 20px; letter-spacing: -0.02em;
+    }
+    .lead { font-size: 19px; color: var(--muted); max-width: 560px; margin: 0 0 28px; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-block; padding: 10px 18px; border-radius: 999px;
+      font-size: 14px; font-weight: 500; text-decoration: none;
+      border: 1px solid var(--line); color: var(--text); transition: all .2s;
+    }
+    .btn.primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+    .btn:hover { transform: translateY(-1px); border-color: var(--accent); }
+
+    section { padding: 48px 0; border-top: 1px solid var(--line); }
+    h2 {
+      font-family: "Fraunces", serif; font-weight: 500; font-size: 26px;
+      margin: 0 0 24px; letter-spacing: -0.01em;
+    }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+
+    .project {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 14px; padding: 26px; margin-bottom: 20px;
+      transition: border-color .2s, transform .2s;
+    }
+    .project:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .project h3 { margin: 0 0 4px; font-size: 20px; font-family: "Fraunces", serif; font-weight: 600; }
+    .project .tagline { color: var(--muted); font-size: 15px; margin-bottom: 18px; }
+    .meta { display: grid; grid-template-columns: 90px 1fr; gap: 6px 16px; font-size: 15px; margin: 0 0 18px; }
+    .meta dt { color: var(--muted); font-weight: 500; }
+    .meta dd { margin: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 12.5px; padding: 3px 10px; border-radius: 999px;
+      background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); font-weight: 500;
+    }
+    .project .row { display: flex; gap: 18px; font-size: 14px; margin-top: 18px; }
+    .project .row a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .project .row a:hover { text-decoration: underline; }
+
+    ul.plain { list-style: none; padding: 0; margin: 0; }
+    ul.plain li { padding: 12px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; }
+    ul.plain li:last-child { border-bottom: 0; }
+    ul.plain a { color: var(--text); text-decoration: none; font-weight: 500; }
+    ul.plain a:hover { color: var(--accent); }
+
+    .timeline li { display: block; }
+    .timeline .when { color: var(--muted); font-size: 14px; }
+
+    footer { padding: 40px 0 64px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+    footer a { color: var(--muted); }
+
+    @media (max-width: 520px) {
+      .meta { grid-template-columns: 1fr; gap: 0; }
+      .meta dd { margin-bottom: 10px; }
+      ul.plain li { flex-direction: column; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <span class="logo">[Your Name]</span>
+      <div>
+        <a href="#projects">Projects</a>
+        <a href="#contributions">Contributions</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="eyebrow">[Your role, e.g. Full-Stack Developer]</div>
+      <h1>I build [what you build, e.g. fast, thoughtful web products].</h1>
+      <p class="lead">
+        [One or two sentences about you: where you're based, what you care about, and what you're looking for.]
+      </p>
+      <div class="links">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="https://github.com/[your-username]" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/[your-username]" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="/resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      </div>
+    </header>
+
+    <section id="projects">
+      <h2>Flagship projects</h2>
+
+      <!-- PROJECT 1 -->
+      <article class="project">
+        <h3>[Project Name]</h3>
+        <div class="tagline">[One-line summary, e.g. A task manager for remote teams]</div>
+        <dl class="meta">
+          <dt>My role</dt>
+          <dd>[e.g. Solo developer / Frontend lead / Backend engineer in a team of 4]</dd>
+          <dt>What I built</dt>
+          <dd>[2–3 sentences: the problem, what you built, and the outcome, e.g. users, performance, or results.]</dd>
+          <dt>Tech</dt>
+          <dd>
+            <div class="tags">
+              <span class="tag">[React]</span>
+              <span class="tag">[Node.js]</span>
+              <span class="tag">[PostgreSQL]</span>
+            </div>
+          </dd>
+        </dl>
+        <div class="row">
+          <a href="https://[live-demo-url]" target="_blank" rel="noopener">Live site ↗</a>
+          <a href="https://github.com/[your-username]/[repo]" target="_blank" rel="noopener">Source code ↗</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project">
+        <h3>[Project Name]</h3>
+        <div class="tagline">[One-line summary]</div>
+        <dl class="meta">
+          <dt>My role</dt>
+          <dd>[Your role]</dd>
+          <dt>What I built</dt>
+          <dd>[What you built and the impact.]</dd>
+          <dt>Tech</dt>
+          <dd>
+            <div class="tags">
+              <span class="tag">[Python]</span>
+              <span class="tag">[FastAPI]</span>
+              <span class="tag">[Docker]</span>
+            </div>
+          </dd>
+        </dl>
+        <div class="row">
+          <a href="https://[live-demo-url]" target="_blank" rel="noopener">Live site ↗</a>
+          <a href="https://github.com/[your-username]/[repo]" target="_blank" rel="noopener">Source code ↗</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project">
+        <h3>[Project Name]</h3>
+        <div class="tagline">[One-line summary]</div>
+        <dl class="meta">
+          <dt>My role</dt>
+          <dd>[Your role]</dd>
+          <dt>What I built</dt>
+          <dd>[What you built and the impact.]</dd>
+          <dt>Tech</dt>
+          <dd>
+            <div class="tags">
+              <span class="tag">[Next.js]</span>
+              <span class="tag">[TypeScript]</span>
+              <span class="tag">[Tailwind]</span>
+            </div>
+          </dd>
+        </dl>
+        <div class="row">
+          <a href="https://[live-demo-url]" target="_blank" rel="noopener">Live site ↗</a>
+          <a href="https://github.com/[your-username]/[repo]" target="_blank" rel="noopener">Source code ↗</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="contributions">
+      <h2>Contributions</h2>
+      <ul class="plain">
+        <li>
+          <span><a href="https://github.com/[org]/[repo]/pull/[number]" target="_blank" rel="noopener">[Open-source project or PR title]</a><br />
+          <span class="muted">[What you contributed, e.g. fixed a bug, added a feature, improved docs]</span></span>
+          <span class="muted">[Year]</span>
+        </li>
+        <li>
+          <span><a href="#" target="_blank" rel="noopener">[Hackathon, community, or team contribution]</a><br />
+          <span class="muted">[Short description]</span></span>
+          <span class="muted">[Year]</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="background">
+      <h2>Background</h2>
+      <p>
+        [A short paragraph about your journey: how you got into tech, what you studied, what you enjoy working on, and what you're exploring now.]
+      </p>
+      <ul class="plain timeline" style="margin-top: 20px;">
+        <li>
+          <strong>[Degree / Course]</strong>, [Institution]
+          <div class="when">[Start year] – [End year]</div>
+        </li>
+        <li>
+          <strong>[Role / Internship]</strong>, [Company]
+          <div class="when">[Start] – [End]</div>
+        </li>
+      </ul>
+      <p class="muted" style="margin-top: 20px;">
+        <strong style="color: var(--text);">Skills:</strong> [JavaScript, TypeScript, React, Node.js, Python, SQL, Git, Docker]
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Get in touch</h2>
+      <p>I'm open to [internships / full-time roles / freelance / collaboration]. The best way to reach me is by email.</p>
+      <div class="links">
+        <a class="btn primary" href="mailto:[you@example.com]">[you@example.com]</a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> [Your Name]. Built with plain HTML &amp; CSS, hosted on Vercel.
+    </footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

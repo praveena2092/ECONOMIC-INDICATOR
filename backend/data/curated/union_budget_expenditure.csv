@@ -1,0 +1,5 @@
+indicator_code,series_key,period,value,basis,as_of,source_url
+gov_expenditure,TOTAL,2023-24,44.43,actual,2024-03-31,https://www.indiabudget.gov.in
+gov_expenditure,CAPITAL,2023-24,9.49,actual,2024-03-31,https://www.indiabudget.gov.in
+gov_expenditure,TOTAL,2024-25,47.16,revised_estimate,2025-02-01,https://www.indiabudget.gov.in
+gov_expenditure,CAPITAL,2024-25,10.18,revised_estimate,2025-02-01,https://www.indiabudget.gov.in

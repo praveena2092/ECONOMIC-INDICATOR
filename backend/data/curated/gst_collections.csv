@@ -1,0 +1,6 @@
+indicator_code,series_key,period,value,basis,as_of,source_url
+gst_collections,IND,2020-21,11.37,actual,2021-03-31,https://pib.gov.in
+gst_collections,IND,2021-22,14.88,actual,2022-03-31,https://pib.gov.in
+gst_collections,IND,2022-23,18.08,actual,2023-03-31,https://pib.gov.in
+gst_collections,IND,2023-24,20.18,actual,2024-03-31,https://pib.gov.in
+gst_collections,IND,2024-25,22.08,actual,2025-03-31,https://pib.gov.in
