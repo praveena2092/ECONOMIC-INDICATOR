@@ -300,10 +300,10 @@ The reference setup is Supabase (database), Render (API) and Render (frontend). 
 
 
 ## Links :
-## frontend : https://economic-indicator-frontend.onrender.com/
-## api_documentation_url : https://economic-indicator-ifil.onrender.com/docs
-# api_health-check_url : https://economic-indicator-ifil.onrender.com/health/ready
-## panel credentials 
+* frontend : https://economic-indicator-frontend.onrender.com/
+* api_documentation_url : https://economic-indicator-ifil.onrender.com/docs
+* api_health-check_url : https://economic-indicator-ifil.onrender.com/health/ready
+* panel credentials 
 username : panel@example.com
 password : 1234567890
-# portfolio link : https://praveena292.github.io/praveena2092.github.io/
+* portfolio link : https://praveena292.github.io/praveena2092.github.io/
