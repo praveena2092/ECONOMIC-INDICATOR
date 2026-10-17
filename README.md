@@ -269,9 +269,9 @@ The reference setup is Supabase (database), Render (API) and Render (frontend). 
 
 ## Design notes
 
-- The layout targets the **1214 × 2159** evaluation viewport and is capped at 1214 px wide. Use the **Fit to screen** button to see the whole canvas on smaller windows.
-- Where the reference image is inconsistent, the app favours correct data: arrows and colours follow the sign of the change, the GST panel's legend names its real series, fiscal years are labelled `FY25`, and the Debt chart uses yearly points because its sources are annual.
-- Card illustrations are placeholder icons. Replace them with the assets exported from the Figma file for pixel-accurate artwork.
+- The layout targets the **1214 × 2159** evaluation viewport and is capped at 1214 px wide.
+- Where the reference image is consistent, the app favours correct data: arrows and colours follow the sign of the change, the GST panel's legend names its real series, fiscal years are labelled `FY25`, and the Debt chart uses yearly points because its sources are annual.
+
 
 ## Troubleshooting
 
